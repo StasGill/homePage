@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(34, 34, 34);
+    /* background-color: white; */
+    padding-top: 30px;
+}
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.timeContainer{
+    width: 570px;
+   
+}
+.clock{
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    /* font-family: 'Staatliches', cursive; */
+    color: white;
+    margin-bottom: 50px;
+    /* padding-left: 20px; */
+    background-color: rgb(22, 22, 22);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.clock:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+.clock-panel{
+    margin: 0;
+}
+
+.justClock{
+    font-size: 128px;
+    
+    
+}
+.timer{
+    
+    font-size: 87px;
+    
+    
+}
+.button{
+    width: 130px;
+    cursor: pointer;
+    font-family: 'Audiowide', cursive;
+    font-size: 30px;
+}
+.buttonContainer{
+   width: 300px;
+   margin: 0 auto;
+   padding: 30px;
+}
+.otherStaff{
+    width: 545px;
+    /* height: 600px; */
+    background-color: rgb(22, 22, 22);
+    padding: 10px;
+    border-radius: 10px;
+}
+.inputItem{
+    width: 400px;
+    height: 40px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+    font-family: 'Audiowide', cursive;
+    outline-style: none;
+}
+.inputBTN{
+    height: 46px;
+    width: 130px;
+    background-color: navy;
+    outline-style: none;
+    font-family: 'Audiowide', cursive;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.listItems{
+    list-style: none;
+    color: white;
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 0;
+}
+.listItem{
+    /* display: inline; */
+    display: flex;
+    justify-content: space-between;
+    width: 520px;
+    background-color: rgb(161, 160, 160);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+.listItem:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.02);
+}
+.listItemBTN{
+    border-radius: 50%;
+    border-style: none;
+    background-color: rgb(165, 0, 0);
+    cursor: pointer;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: inline;
+}
+.listItemP{
+    display: inline;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor:default;
+}
