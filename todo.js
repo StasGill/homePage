@@ -27,7 +27,7 @@ function firstLoading(){
 
         const todomarkUp = dataLocal.map(item => buildTodoItem(item)).join('')
         appendTodoItem(todoList,todomarkUp)
-        console.log(todomarkUp)
+        // console.log(todomarkUp)
     }
 }
 firstLoading()

@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./weather.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,30 +16,35 @@
     <section class="main">
         <div class="timeContainer">
             <div class="clock">
-            <p class="clock-panel justClock">00:00</p>
+                <p class="clock-panel justClock">00:00</p>
             </div>
             <div class="clock">
-            <p class="clock-panel timer">00:00:00</p>
-            <div class="buttonContainer">
-            <button class="button js-start" data-action="start-timer">Start</button>
-            <button class="button js-stop" data-action="stop-timer">Stop</button>
+                <p class="clock-panel timer">00:00:00</p>
+                <div class="buttonContainer">
+                    <button class="button js-start" data-action="start-timer">Start</button>
+                    <button class="button js-stop" data-action="stop-timer">Stop</button>
+                </div>
             </div>
-    
-        </div>
+            <div class="weatherPanel">
+            <div class="wheatherContainer js-wheatherContainer"></div>
+            <div class="wheatherContainer js-currenciContainer"></div>
+            </div>
+            
+            
+            </div>
         </div>
         <div class="otherStaff">
             <form class="inputForm js-inputForm">
                 <input type="text"  placeholder="New task..." class="inputItem" name='text'>
                 <button class="inputBTN" type="submit">Create task</button>
             </form>
-            <ul class="listItems js-listItems">
-                
-                
-            </ul>
+            <ul class="listItems js-listItems"></ul>
         </div>
     </section>
     <script src="./script.js"></script>
     <script src="./timer.js"></script>
     <script src="./todo.js"></script>
+    <script src="./wheather.js"></script>
+    <script src="./curenci.js"></script>
 </body>
 </html>

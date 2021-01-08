@@ -1,27 +1,22 @@
 body{
     background-color: rgb(34, 34, 34);
-    /* background-color: white; */
     padding-top: 30px;
 }
 .main{
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
-    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .timeContainer{
     width: 570px;
-   
 }
 .clock{
     text-align: center;
     font-family: 'Audiowide', cursive;
-    /* font-family: 'Staatliches', cursive; */
     color: white;
     margin-bottom: 50px;
-    /* padding-left: 20px; */
     background-color: rgb(22, 22, 22);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     cursor: pointer;
@@ -29,7 +24,7 @@ body{
 }
 .clock:hover {
     transition: transform 0.3s ease-in-out;
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 .clock-panel{
     margin: 0;
@@ -37,14 +32,9 @@ body{
 
 .justClock{
     font-size: 128px;
-    
-    
 }
 .timer{
-    
     font-size: 87px;
-    
-    
 }
 .button{
     width: 130px;
@@ -59,10 +49,12 @@ body{
 }
 .otherStaff{
     width: 545px;
-    /* height: 600px; */
     background-color: rgb(22, 22, 22);
     padding: 10px;
     border-radius: 10px;
+    flex-basis:auto ;
+    height: auto;
+    
 }
 .inputItem{
     width: 400px;
@@ -91,7 +83,6 @@ body{
     margin-bottom: 0;
 }
 .listItem{
-    /* display: inline; */
     display: flex;
     justify-content: space-between;
     width: 520px;
@@ -99,7 +90,6 @@ body{
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
-    
 }
 .listItem:hover {
     transition: transform 0.3s ease-in-out;
@@ -121,4 +111,57 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
     cursor:default;
+}
+.wheatherContainer{
+    /* display:inline-flex; */
+    display: flex;
+    width: 243px;
+    background-color: rgb(22, 22, 22);
+    justify-content: space-between;
+    border-radius: 10px;
+    /* margin: 10px; */
+    color: white;
+    font-family: 'Audiowide', cursive;
+    font-size: 70px;
+    padding: 10px;
+}
+.weatherIMG{
+    width: 100px;
+    border-radius: 10px;
+}
+.weatherP{
+    margin: 0;
+}
+.weatherItem{
+    margin: 0;
+    height: 100px;
+}
+.wheatherContainer:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.02);
+}
+
+
+.currenciP{
+    font-size: 55px;
+    margin-top: 15px;
+}
+.currencyContainer{
+    display:inline-flex;
+    width: 243px;
+    height: 100px;
+    background-color: rgb(22, 22, 22);
+    justify-content: space-between;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Audiowide', cursive;
+    font-size: 70px;
+    padding: 10px;
+}
+.weatherPanel{
+    display: flex;
+    width: 570px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
