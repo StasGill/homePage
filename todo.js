@@ -43,6 +43,7 @@ function handleEditorSubmit(e){
     localStorage.setItem('posts',JSON.stringify(todos.items))
 }
 function buildTodoItem(item){
+    
     return `<li class="listItem" data-id ="${item.id}">
     <p class="listItemP">${item.text}</p>
     <button class="listItemBTN">X</button>
@@ -64,7 +65,6 @@ function handleTodoListClick(e){
     const todoId = Number(li.dataset.id);
     todos.delete(todoId)
     localStorage.setItem('posts',JSON.stringify(todos.items))
-    // todoList.removeChild(li)
     li.remove();
 }
 
