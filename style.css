@@ -1,102 +1,132 @@
-body{
+body {
     background-color: rgb(34, 34, 34);
     padding-top: 30px;
 }
-.main{
-    width: 1200px;
+
+.main {
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.timeContainer{
+
+.timeContainer {
     width: 570px;
+    /* margin: 0 auto 0 auto; */
+    cursor: default;
 }
-.clock{
+
+.clock {
     text-align: center;
     font-family: 'Audiowide', cursive;
     color: white;
     margin-bottom: 50px;
     background-color: rgb(22, 22, 22);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     border-radius: 10px;
 }
+
 .clock:hover {
     transition: transform 0.3s ease-in-out;
     transform: scale(1.02);
 }
-.clock-panel{
+
+.clock-panel {
     margin: 0;
 }
 
-.justClock{
+.justClock {
     font-size: 128px;
 }
-.timer{
+
+.timer {
     font-size: 87px;
 }
-.button{
+
+.button {
     width: 130px;
     cursor: pointer;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Roboto Slab',
+        serif;
+    font-weight: bold;
     font-size: 30px;
+    background-color: rgb(165, 0, 0);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
 }
-.buttonContainer{
-   width: 300px;
-   margin: 0 auto;
-   padding: 30px;
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin: 0 auto;
+    padding: 30px;
 }
-.otherStaff{
+
+.otherStaff {
     width: 545px;
     background-color: rgb(22, 22, 22);
     padding: 10px;
     border-radius: 10px;
-    flex-basis:auto ;
+    flex-basis: auto;
     height: auto;
-    
+    /* margin: 0 auto; */
+
 }
-.inputItem{
+
+.inputItem {
     width: 400px;
     height: 40px;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(233, 233, 233);
     border-radius: 10px;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Roboto Slab',
+        serif;
     outline-style: none;
 }
-.inputBTN{
+
+.inputBTN {
     height: 46px;
     width: 130px;
-    background-color: navy;
+    background-color: rgb(165, 0, 0);
     outline-style: none;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Roboto Slab',
+        serif;
     color: white;
     cursor: pointer;
     border-radius: 10px;
 }
-.listItems{
+
+.listItems {
     list-style: none;
-    color: white;
+    /* color: white; */
     font-family: 'Audiowide', cursive;
     font-size: 20px;
     padding: 0;
     margin-bottom: 0;
 }
-.listItem{
+
+.listItem {
     display: flex;
     justify-content: space-between;
     width: 520px;
-    background-color: rgb(161, 160, 160);
+    background-color: rgb(233, 233, 233);
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
+    font: black;
+    font-family: 'Roboto Slab',
+        serif;
 }
+
 .listItem:hover {
     transition: transform 0.3s ease-in-out;
     transform: scale(1.02);
 }
-.listItemBTN{
-    border-radius: 50%;
+
+.listItemBTN {
+    border-radius: 10px;
     border-style: none;
     background-color: rgb(165, 0, 0);
     cursor: pointer;
@@ -105,49 +135,56 @@ body{
     height: 40px;
     display: inline;
 }
-.listItemP{
+
+.listItemP {
     display: inline;
     width: 300px;
     margin-top: 10px;
     margin-bottom: 10px;
-    cursor:default;
+    cursor: default;
 }
-.wheatherContainer{
-    /* display:inline-flex; */
+
+.wheatherContainer {
     display: flex;
     width: 243px;
     background-color: rgb(22, 22, 22);
     justify-content: space-between;
     border-radius: 10px;
-    /* margin: 10px; */
     color: white;
     font-family: 'Audiowide', cursive;
     font-size: 70px;
     padding: 10px;
+    text-align: center;
+
 }
-.weatherIMG{
+
+.weatherIMG {
     width: 100px;
     border-radius: 10px;
 }
-.weatherP{
+
+.weatherP {
     margin: 0;
 }
-.weatherItem{
+
+.weatherItem {
     margin: 0;
     height: 100px;
 }
+
 .wheatherContainer:hover {
     transition: transform 0.3s ease-in-out;
     transform: scale(1.02);
 }
 
 
-.currenciP{
-    font-size: 55px;
+.currenciP {
+    font-size: 57px;
     margin-top: 15px;
 }
-.currencyContainer{
-    display:inline-flex;
+
+.currencyContainer {
+    display: inline-flex;
     width: 243px;
     height: 100px;
     background-color: rgb(22, 22, 22);
@@ -158,14 +195,87 @@ body{
     font-size: 70px;
     padding: 10px;
 }
-.weatherPanel{
+
+.weatherPanel {
     display: flex;
     width: 570px;
     justify-content: space-between;
     padding: 0;
     margin: 0;
 }
-.weatherSuperP{
+
+.weatherSuperP {
     font-size: 15px;
     margin: 0;
+    font-family: 'Roboto Slab',
+        serif;
+}
+
+@media screen and (min-width: 1900px) {
+    .main {
+        max-width: 1900px;
+    }
+
+    .timeContainer {
+        width: 920px;
+    }
+
+    .otherStaff {
+        width: 920px;
+    }
+
+    .justClock {
+        font-size: 241px;
+    }
+
+    .timer {
+        font-size: 142px;
+    }
+
+    .timer {
+        font-size: 142px;
+    }
+
+    .weatherIMG {
+        width: 166px;
+    }
+
+    .weatherP {
+        font-size: 120px;
+    }
+
+    .weatherSuperP {
+        font-size: 24px;
+    }
+
+    .weatherPanel {
+        width: 920px;
+    }
+
+    .wheatherContainer {
+        width: 420px;
+    }
+
+    .currenciP {
+        font-size: 104px;
+        margin-top: 26px;
+    }
+
+    .listItem {
+        width: 900px;
+        font-size: 34px;
+    }
+
+    .listItemP {
+        width: auto;
+    }
+
+    .inputItem {
+        width: 777px;
+    }
+
+    .listItemBTN {
+        margin-top: 10px;
+    }
+
 }
